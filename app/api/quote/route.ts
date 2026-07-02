@@ -1,4 +1,6 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
+import { site } from "@/lib/site";
 
 type QuotePayload = {
   name: string;
@@ -19,6 +21,32 @@ function validate(data: Partial<QuotePayload>): string | null {
     return "Let us know what car you're after.";
   }
   return null;
+}
+
+async function sendLeadEmail(submission: QuotePayload & { submittedAt: string }) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return; // no key configured — log-only mode, see console output
+
+  const resend = new Resend(apiKey);
+  const to = process.env.LEAD_NOTIFICATION_EMAIL || site.email;
+  const from = process.env.RESEND_FROM_EMAIL || "Finley McGrath Motors <onboarding@resend.dev>";
+
+  try {
+    await resend.emails.send({
+      from,
+      to,
+      subject: `New quote request — ${submission.name}`,
+      html: `
+        <h2>New quote request</h2>
+        <p><strong>Name:</strong> ${submission.name}</p>
+        <p><strong>Phone:</strong> ${submission.phone}</p>
+        <p><strong>Vehicle:</strong> ${submission.vehicle}</p>
+        <p><strong>Submitted:</strong> ${submission.submittedAt}</p>
+      `,
+    });
+  } catch (err) {
+    console.error("[quote-request] failed to send lead email:", err);
+  }
 }
 
 export async function POST(request: Request) {
@@ -42,11 +70,8 @@ export async function POST(request: Request) {
     submittedAt: new Date().toISOString(),
   };
 
-  // TODO: replace this console log with a real destination — e.g. send via
-  // Resend (https://resend.com), forward to Formspree, or insert into a
-  // database (Postgres/Supabase/etc). Keeping this as a simple log means the
-  // route works out of the box with zero external config.
   console.log("[quote-request]", submission);
+  await sendLeadEmail(submission);
 
   return NextResponse.json({ ok: true });
 }
