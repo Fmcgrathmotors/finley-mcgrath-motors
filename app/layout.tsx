@@ -26,7 +26,7 @@ const plexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://www.finleymcgrathmotors.com.au";
+const siteUrl = "https://finleymcgrathmotors.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

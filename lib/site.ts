@@ -5,7 +5,7 @@ export const site = {
   phoneHref: "tel:0410007614",
   serviceArea: "Brisbane & South East Queensland",
   serviceAreaList: ["Brisbane", "Ipswich", "Logan", "Gold Coast", "Sunshine Coast"],
-  email: "hello@finleymcgrathmotors.com.au",
+  email: "hello@finleymcgrathmotors.com",
   hours: [
     { day: "Mon–Fri", time: "8:30am – 5:30pm" },
     { day: "Sat", time: "9:00am – 2:00pm" },
