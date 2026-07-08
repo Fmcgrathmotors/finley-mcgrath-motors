@@ -28,8 +28,8 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-6 font-display text-4xl leading-[1.08] text-paper sm:text-5xl lg:text-6xl">
-            We buy the car.{" "}
-            <span className="italic text-brass-bright">You just drive it.</span>
+            Save time. Save money.{" "}
+            <span className="italic text-brass-bright">Buy smarter.</span>
           </h1>
 
           <p className="mt-6 max-w-xl font-body text-base leading-relaxed text-slate sm:text-lg">
@@ -41,7 +41,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button href={site.phoneHref}>Call {site.phone}</Button>
             <Button href="#quote" variant="outline">
-              Get a free quote
+              Request a callback
             </Button>
           </div>
 

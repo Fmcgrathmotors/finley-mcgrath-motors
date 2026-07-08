@@ -16,7 +16,7 @@ export default function MobileStickyBar() {
         href="#quote"
         className="flex flex-1 items-center justify-center gap-2 bg-gradient-to-r from-brass-bright to-brass py-3.5 font-body text-sm font-semibold text-ink"
       >
-        Get free quote
+        Request a callback
       </a>
     </div>
   );

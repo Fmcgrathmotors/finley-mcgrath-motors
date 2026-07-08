@@ -7,7 +7,7 @@ import Reveal from "@/components/ui/Reveal";
 const FAQS = [
   {
     q: "Is it more expensive than going direct to a dealership?",
-    a: "No — in almost every case it's cheaper, even after our fee. We negotiate from wholesale pricing and dealer-network access most buyers never see, and our clients save an average of $3,180 versus the original asking price. You'll know our fee upfront before you commit to anything.",
+    a: "No — our service is free to you. We're paid by the dealer once your vehicle is delivered, not by you. We still negotiate from wholesale pricing and dealer-network access most buyers never see, so our clients save an average of $3,180 versus the original asking price, with nothing to pay on top.",
   },
   {
     q: "How fast can you source my car?",

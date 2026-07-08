@@ -118,7 +118,7 @@ export default function QuoteForm() {
           disabled={status === "submitting"}
           className="mt-2 inline-flex items-center justify-center rounded-full bg-ink px-6 py-3 font-body text-sm font-semibold text-paper transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg disabled:opacity-60 disabled:hover:translate-y-0"
         >
-          {status === "submitting" ? "Sending…" : "Request my free quote"}
+          {status === "submitting" ? "Sending…" : "Request a callback"}
         </button>
       </div>
     </form>

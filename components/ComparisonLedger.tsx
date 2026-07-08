@@ -76,7 +76,7 @@ export default function ComparisonLedger() {
                 <span className="font-mono text-xs uppercase tracking-wide text-slate/60">
                   Total cost to you
                 </span>
-                <span className="font-mono text-sm text-sage">One flat, transparent fee</span>
+                <span className="font-mono text-sm text-sage">$0 — we&apos;re paid by the dealer</span>
               </div>
             </div>
           </div>

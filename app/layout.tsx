@@ -30,7 +30,7 @@ const siteUrl = "https://finleymcgrathmotors.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Finley McGrath Motors | Auto Broker Brisbane — We Buy The Car, You Just Drive It",
+  title: "Finley McGrath Motors | Auto Broker Brisbane — Save Time. Save Money. Buy Smarter.",
   description:
     "Independent new-car auto broker in Brisbane & SEQ. We source and negotiate your next new vehicle so you never deal with a dealership. Free, no-obligation quotes.",
   keywords: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Finley McGrath Motors | Auto Broker Brisbane",
     description:
-      "We buy the car. You just drive it. Independent new-car broker serving Brisbane & South East Queensland — no dealer pressure, no wasted weekends on lots.",
+      "Save time. Save money. Buy smarter. Independent new-car broker serving Brisbane & South East Queensland — no dealer pressure, no wasted weekends on lots.",
     url: siteUrl,
     siteName: "Finley McGrath Motors",
     locale: "en_AU",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Finley McGrath Motors | Auto Broker Brisbane",
-    description: "We buy the car. You just drive it. New-car broker for Brisbane & SEQ.",
+    description: "Save time. Save money. Buy smarter. New-car broker for Brisbane & SEQ.",
   },
   robots: {
     index: true,

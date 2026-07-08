@@ -13,8 +13,8 @@ export default function Footer() {
             </span>
             <p className="mt-3 max-w-xs font-body text-sm leading-relaxed text-slate">
               Independent auto broker sourcing and negotiating new vehicles on behalf of
-              buyers across Brisbane & South East Queensland. We buy the car — you just
-              drive it.
+              buyers across Brisbane & South East Queensland. Save time. Save money. Buy
+              smarter.
             </p>
           </div>
 
