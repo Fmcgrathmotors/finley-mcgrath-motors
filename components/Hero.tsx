@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-ink pt-16 pb-20 sm:pt-24 sm:pb-28">
+    <section className="relative overflow-hidden pt-16 pb-20 sm:pt-24 sm:pb-28">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-60"

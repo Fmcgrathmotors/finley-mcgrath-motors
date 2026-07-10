@@ -17,7 +17,7 @@ const ROWS: Row[] = [
 
 export default function ComparisonLedger() {
   return (
-    <section id="why-a-broker" className="bg-ink py-20 sm:py-28">
+    <section id="why-a-broker" className="py-20 sm:py-28">
       <div className="mx-auto max-w-4xl px-5 sm:px-8">
         <Reveal className="text-center">
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-brass-bright">

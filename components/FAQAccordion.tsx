@@ -27,7 +27,7 @@ export default function FAQAccordion() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="bg-ink py-20 sm:py-28">
+    <section id="faq" className="py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-5 sm:px-8">
         <Reveal className="text-center">
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-brass-bright">

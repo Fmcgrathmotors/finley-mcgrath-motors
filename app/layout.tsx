@@ -3,6 +3,7 @@ import { Fraunces, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import MobileStickyBar from "@/components/MobileStickyBar";
 import MotionProvider from "@/components/MotionProvider";
+import BackgroundWatermark from "@/components/BackgroundWatermark";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -72,6 +73,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-ink font-body text-slate">
         <MotionProvider>
+          <BackgroundWatermark />
           {children}
           <MobileStickyBar />
         </MotionProvider>
